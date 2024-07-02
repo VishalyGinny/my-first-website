@@ -14,7 +14,6 @@ export default function Home() {
                 Hey everyone, this is my first website!
               </h1>
               {/* Adding the image here */}
-
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 I am a front end developer and Data Analyst. I love to build
                 websites.
