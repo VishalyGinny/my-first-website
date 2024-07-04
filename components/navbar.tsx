@@ -6,7 +6,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const Navbar = () => {
   return (
-    <div className="w-full h-16 background flex items-center justify-between px-4">
+    <div className="w-full h-13 background flex items-center justify-between px-4">
       <div className="flex justify-between items-center m-2">
         <div className="flex space-x-4">
           <Button asChild variant="link">
