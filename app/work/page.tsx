@@ -1,54 +1,23 @@
 import Link from "next/link";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
-
-const projects = [
-  {
-    title: "Project 1: Titanic",
-    description:
-      "The competition uses machine learning to create a model that predicts which passengers survived the Titanic shipwreck.",
-    link: "https://stripe.com",
-  },
-  {
-    title: "Project 2: House Prices",
-    description:
-      "Use advanced regression techniques like random forest and gradient boosting to predict the sales price for each house.",
-    link: "https://netflix.com",
-  },
-  {
-    title: "Project 3: Natural Language Processing",
-    description:
-      "Use Natural Language Processing to analyze text predicting whether it is a real disaster or not.",
-    link: "https://google.com",
-  },
-  {
-    title: "Project 4: Digit Recognizer",
-    description: "Use MNIST dataset to classify handwritten digits.",
-    link: "https://meta.com",
-  },
-  {
-    title: "Project 5: Academic Success",
-    description: "Predict academic risk of students in higher education.",
-    link: "https://amazon.com",
-  },
-  {
-    title: "Project 6: Cleaned vs Dirty V2",
-    description:
-      "Train a classifier to determine clean dishes from dirty ones.",
-    link: "https://microsoft.com",
-  },
-];
-
-// Make CardHoverEffectDemo the default export
-export default function CardHoverEffectDemo() {
+import page from "../about/page";
+import { projects } from "@/lib/projects";
+const Page = () => {
   return (
-    <div className="max-w-5xl mx-auto px-8">
-      <HoverEffect items={projects} />
+    <div className="flex flex-col w-full min-h-screen">
+      <header className=" py-8 px-4 md:px-6">
+        <div className="container max-w-5xl mx-auto">
+          <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+            My Machine Learning Projects
+          </h1>
+        </div>
+      </header>
+
+      <div className="max-w-5xl mx-auto px-8">
+        <HoverEffect items={projects} />
+      </div>
     </div>
   );
-}
+};
+
+export default Page;
