@@ -18,19 +18,6 @@ export default function Home() {
                 websites.
               </p>
             </div>
-            <div className="w-full max-w-sm space-y-2">
-              <form className="flex gap-2"></form>
-              <p className="text-xs text-muted-foreground">
-                This is not working yet.{" "}
-                <Link
-                  href="#"
-                  className="underline underline-offset-2"
-                  prefetch={false}
-                >
-                  Terms &amp; Conditions
-                </Link>
-              </p>
-            </div>
           </div>
           <div className="flex justify-center mt-4">
             <Image
