@@ -8,7 +8,7 @@ const Page = () => {
       <header className=" py-8 px-4 md:px-6">
         <div className="container max-w-5xl mx-auto">
           <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">
-            My Machine Learning Projects
+            My Lastest Projects
           </h1>
         </div>
       </header>

@@ -40,7 +40,8 @@ export default function Home() {
             <div className="bg-background rounded-md shadow-sm p-4">
               <h3 className="text-lg font-semibold mb-2">Web Development</h3>
               <p className="text-muted-foreground mb-4">
-                Professional web design services for businesses of all sizes.
+                Professional web development skills with React, Tailwind, and
+                Next JS.
               </p>
               <Button variant="outline" className="w-full">
                 View Profile
@@ -49,7 +50,7 @@ export default function Home() {
             <div className="bg-background rounded-md shadow-sm p-4">
               <h3 className="text-lg font-semibold mb-2">Web Design</h3>
               <p className="text-muted-foreground mb-4">
-                Comprehensive digital marketing solutions to grow your business.
+                Professional web designing skills with UI/UX.
               </p>
               <Button variant="outline" className="w-full">
                 View Profile
@@ -58,7 +59,7 @@ export default function Home() {
             <div className="bg-background rounded-md shadow-sm p-4">
               <h3 className="text-lg font-semibold mb-2">Machine Learning</h3>
               <p className="text-muted-foreground mb-4">
-                Reliable and efficient IT support for your business needs.
+                Knowledge of supervised machine learning.
               </p>
               <Button variant="outline" className="w-full">
                 View Profile
