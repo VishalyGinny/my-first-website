@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import whiteforest from "../public/white-forest.jpg";
 import chamelion from "../public/chamelion.avif";
-import gsap from "gsap";
 import { Button } from "@/components/ui/button";
 import { SearchIcon } from "lucide-react";
+import { Card } from "@/components/ui/card-hover-effect";
 
 export default function Home() {
   return (
@@ -32,12 +32,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full max-w-6x2 mx-auto px-4 sm:px-6 lg:px-5 py-20">
+        <div className="w-full max-w-6x2 mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="flex items-center justify-between mb-8">
             <h1 className="text-2xl font-bold">Skills and Work</h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="bg-background rounded-md shadow-sm p-4">
+            <div className="bg-background rounded-md shadow-lg p-4">
               <h3 className="text-lg font-semibold mb-2">Web Development</h3>
               <p className="text-muted-foreground mb-4">
                 Professional web development skills with React, Tailwind, and
@@ -47,25 +47,26 @@ export default function Home() {
                 View Profile
               </Button>
             </div>
-            <div className="bg-background rounded-md shadow-sm p-4">
+            <div className="bg-background rounded-md shadow-lg p-4">
               <h3 className="text-lg font-semibold mb-2">Web Design</h3>
               <p className="text-muted-foreground mb-4">
-                Professional web designing skills with UI/UX.
+                Professional web designing skills. Able to apply UI/UX.
               </p>
               <Button variant="outline" className="w-full">
                 View Profile
               </Button>
             </div>
-            <div className="bg-background rounded-md shadow-sm p-4">
+            <div className="bg-background rounded-md shadow-lg p-4">
               <h3 className="text-lg font-semibold mb-2">Machine Learning</h3>
               <p className="text-muted-foreground mb-4">
-                Knowledge of supervised machine learning.
+                Knowledge of both categorical and regression in supervised
+                machine learning.
               </p>
               <Button variant="outline" className="w-full">
                 View Profile
               </Button>
             </div>
-            <div className="bg-background rounded-md shadow-sm p-4">
+            <div className="bg-background rounded-md shadow-lg p-4">
               <h3 className="text-lg font-semibold mb-2">Data Analytics</h3>
               <p className="text-muted-foreground mb-4">
                 Professional accounting services to manage your finances.
@@ -74,7 +75,7 @@ export default function Home() {
                 View Profile
               </Button>
             </div>
-            <div className="bg-background rounded-md shadow-sm p-4">
+            <div className="bg-background rounded-md shadow-lg p-4">
               <h3 className="text-lg font-semibold mb-2">Digital Marketing</h3>
               <p className="text-muted-foreground mb-4">
                 Expert legal advice and representation for your business.
@@ -83,7 +84,7 @@ export default function Home() {
                 View Profile
               </Button>
             </div>
-            <div className="bg-background rounded-md shadow-sm p-4">
+            <div className="bg-background rounded-md shadow-lg p-4">
               <h3 className="text-lg font-semibold mb-2">
                 Programming Languages
               </h3>
