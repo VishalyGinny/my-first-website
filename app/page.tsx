@@ -3,8 +3,13 @@ import Link from "next/link";
 import whiteforest from "../public/white-forest.jpg";
 import chamelion from "../public/chamelion.avif";
 import { Button } from "@/components/ui/button";
-import { SearchIcon } from "lucide-react";
+import { MailIcon, SearchIcon } from "lucide-react";
 import { Card } from "@/components/ui/card-hover-effect";
+import { Input } from "@/components/ui/input";
+import { GithubIcon } from "lucide-react";
+import { Textarea } from "@/components/ui/textarea";
+import { PhoneIcon } from "lucide-react";
+import { LinkedinIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -33,8 +38,8 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full max-w-6x2 mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="flex items-center justify-between mb-8">
-            <h1 className="text-2xl font-bold">Skills and Work</h1>
+          <div className="flex items-center justify-center mb-14 pt-4">
+            <h1 className="text-4xl font-bold">Skills and Work</h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div className="bg-background rounded-md shadow-lg p-4">
@@ -99,6 +104,92 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="container mx-auto px-4 md:px-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 py-3">Education</h2>
+        <div className="grid gap-8">
+          <div>
+            <h3 className="text-2xl font-bold mb-3">
+              Bachelor of Science in Computer Science
+            </h3>
+            <p className="text-muted-foreground mb-3">
+              University of Example, 2024 - 2028
+            </p>
+            <p className="text-muted-foreground">
+              Graduated with a GPA of 4.0.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold mb-3">Coursera Online Courses</h3>
+            <p className="text-muted-foreground mb-3">2019 - 2021</p>
+            <ul className="list-disc pl-6 text-muted-foreground">
+              <li>Full-Stack Web Development with React Specialization</li>
+              <li>Machine Learning Specialization</li>
+              <li>Cybersecurity Fundamentals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section className="container mx-auto px-4 md:px-6 py-12 md:py-10">
+      </section>
+      <section className="container mx-auto px-4 md:px-6 py-12 md:py-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8">Contact</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
+            <form className="grid gap-4">
+              <Input
+                type="text"
+                placeholder="Name"
+                className="w-full px-4 py-2 rounded-md bg-background focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+              <Input
+                type="email"
+                placeholder="Email"
+                className="w-full px-4 py-2 rounded-md bg-background focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+              <Textarea
+                placeholder="Message"
+                className="w-full px-4 py-2 rounded-md bg-background focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+              <Button
+                type="submit"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              >
+                Send Message
+              </Button>
+            </form>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold mb-4">Find Me</h3>
+            <div className="grid gap-4">
+              <div className="flex items-center gap-2">
+                <MailIcon className="w-6 h-6 text-muted-foreground" />
+                <a href="#" className="text-muted-foreground hover:underline">
+                  johndoe@example.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <PhoneIcon className="w-6 h-6 text-muted-foreground" />
+                <a href="#" className="text-muted-foreground hover:underline">
+                  +852 (234) 567-890
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <LinkedinIcon className="w-6 h-6 text-muted-foreground" />
+                <a href="#" className="text-muted-foreground hover:underline">
+                  LinkedIn
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <GithubIcon className="w-6 h-6 text-muted-foreground" />
+                <a href="#" className="text-muted-foreground hover:underline">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Label } from "@radix-ui/react-dropdown-menu";
+import { PaperPlaneIcon } from "@radix-ui/react-icons";
 
 const page = () => {
   return (
@@ -14,7 +15,7 @@ const page = () => {
                   Get in Touch
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                 You can find my contact information below.
+                  You can find my contact information below.
                 </p>
               </div>
               <p className="text-muted-foreground">
