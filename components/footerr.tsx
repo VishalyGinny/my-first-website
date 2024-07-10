@@ -1,4 +1,6 @@
 import React from "react";
+import { ModeToggle } from "@/components/ModeToggle";
+import Home from "@/app/page";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
@@ -30,7 +32,9 @@ export const Footer = () => {
             className="text-muted-foreground hover:underline"
             prefetch={false}
           >
-            Home
+            <Button asChild variant="link">
+            <Link href="/">Home</Link>
+          </Button>
           </Link>
           <Link
             href="#"
