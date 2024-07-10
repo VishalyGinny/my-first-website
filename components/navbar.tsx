@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ModeToggle } from "@/components/ModeToggle";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { InstagramIcon, LinkedinIcon, MountainIcon, TwitterIcon } from "lucide-react";
 
 export const Navbar = () => {
   return (

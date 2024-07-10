@@ -129,8 +129,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="container mx-auto px-4 md:px-6 py-12 md:py-10">
-      </section>
+      <section className="container mx-auto px-4 md:px-6 py-12 md:py-10"></section>
       <section className="container mx-auto px-4 md:px-6 py-12 md:py-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Contact</h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -165,7 +164,7 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <MailIcon className="w-6 h-6 text-muted-foreground" />
                 <a href="#" className="text-muted-foreground hover:underline">
-                  johndoe@example.com
+                  vishalyginny@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -176,20 +175,26 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2">
                 <LinkedinIcon className="w-6 h-6 text-muted-foreground" />
-                <a href="#" className="text-muted-foreground hover:underline">
+                <a
+                  href="https://www.linkedin.com/feed/"
+                  className="text-muted-foreground hover:underline"
+                >
                   LinkedIn
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <GithubIcon className="w-6 h-6 text-muted-foreground" />
-                <a href="#" className="text-muted-foreground hover:underline">
+                <a
+                  href="https://github.com/VishalyGinny"
+                  className="text-muted-foreground hover:underline"
+                >
                   GitHub
                 </a>
               </div>
             </div>
           </div>
         </div>
-        </section>
+      </section>
     </section>
   );
 }
