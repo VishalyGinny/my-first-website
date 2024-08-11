@@ -19,18 +19,19 @@ export const projects = [
   },
   {
     title: "Project 4: Digit Recognizer",
-    description: "Use MNIST dataset to classify handwritten digits.",
+    description:
+      "Use MNIST dataset to correctly identify digits from a dataset of tens of thousands of handwritten images.",
     link: "/work/project-4",
   },
   {
-    title: "Project 5: Academic Success",
+    title: "Project 5: Classification with an Academic Success Dataset",
     description: "Predict academic risk of students in higher education.",
     link: "/work/project-5",
   },
   {
     title: "Project 6: Cleaned vs Dirty V2",
     description:
-      "Train a classifier to determine clean dishes from dirty ones.",
+      "Train a classifier to determine clean dishes from dirty ones from a dataset of 20 clean and 20 dirty plates in train and hundreds of plates in test.",
     link: "/work/project-6",
   },
 ];

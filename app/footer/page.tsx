@@ -9,7 +9,7 @@ import {
   TwitterIcon,
 } from "lucide-react";
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer className="bg-muted py-12 w-full">
       <div className="container max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -108,4 +108,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
