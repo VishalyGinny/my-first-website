@@ -163,9 +163,12 @@ export default function Home() {
             <div className="grid gap-4">
               <div className="flex items-center gap-2">
                 <MailIcon className="w-6 h-6 text-muted-foreground" />
-                <a href="#" className="text-muted-foreground hover:underline">
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:underline"
+                >
                   vishalyginny@gmail.com
-                </a>
+                </Link>
               </div>
               <div className="flex items-center gap-2">
                 <PhoneIcon className="w-6 h-6 text-muted-foreground" />
