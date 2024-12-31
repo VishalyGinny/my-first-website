@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-4">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
             <MountainIcon className="w-6 h-6" />
-            <span className="text-xl font-bold">Acme Inc</span>
+            <span className="text-xl font-bold">Vishaly Ginny</span>
           </Link>
           <p className="text-muted-foreground">
             Beautifully designed components that you can copy and paste into
